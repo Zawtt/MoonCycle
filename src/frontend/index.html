@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha do Personagem - RPG App</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Ficha do Personagem</h1>
+        <form id="character-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" placeholder="Nome do Personagem" required>
+
+            <label for="class">Classe:</label>
+            <input type="text" id="class" placeholder="Classe do Personagem" required>
+
+            <label for="level">Nível:</label>
+            <input type="number" id="level" value="1" min="1" required>
+
+            <h2>Atributos</h2>
+            <label for="strength">Força:</label>
+            <input type="number" id="strength" value="10" min="1" required>
+
+            <label for="dexterity">Destreza:</label>
+            <input type="number" id="dexterity" value="10" min="1" required>
+
+            <label for="intelligence">Inteligência:</label>
+            <input type="number" id="intelligence" value="10" min="1" required>
+
+            <h2>Habilidades</h2>
+            <textarea id="skills" placeholder="Liste as habilidades do personagem"></textarea>
+
+            <button type="submit">Salvar Ficha</button>
+        </form>
+    </div>
+    <script src="app.js"></script> <!-- Link para o JavaScript -->
+</body>
+</html>
